@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:layout_centerVertical="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="664dp"
+        android:layout_marginTop="67dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDecorateAI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Decorate Using AI"
+                    android:textAlignment="center"
+                    android:textColor="#373672"
+                    tools:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtGenerateDesign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Generate a Design"
+                    android:textAlignment="center"
+                    android:textColor="#373672"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="550dp"
+            android:layout_gravity="center"
+            android:background="#E7E6E6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:paddingTop="30px"
+                    android:text="Upload Image:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtUploadDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:text="Upload a clear image of the room you want to generate a design"
+                    android:textColor="#969696"
+                    tools:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imageView5"
+                    android:layout_width="169dp"
+                    android:layout_height="34dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:cropToPadding="true"
+                    android:paddingTop="10px"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/choosebtn" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="Selected Image"
+                    android:scaleType="centerCrop" />
+
+
+                <TextView
+                    android:id="@+id/txtChooseStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:paddingTop="30px"
+                    android:text="Choose your desired style: "
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtChooseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:text="Choose the room style that you want to incorporate in your room."
+                    android:textColor="#969696"
+                    tools:textSize="10sp" />
+
+                <Spinner
+                    android:id="@+id/styledropdown"
+                    android:layout_width="340dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:background="#9B9B9B"
+                    android:paddingLeft="30px" />
+
+                <TextView
+                    android:id="@+id/txtChooseStyle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:paddingTop="30px"
+                    android:text="Choose room type: "
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtChooseDescription3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:paddingLeft="50px"
+                    android:textColor="#969696"
+                    tools:textSize="10sp" />
+
+                <Spinner
+                    android:id="@+id/typedropdown"
+                    android:layout_width="340dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="#9B9B9B"
+                    android:paddingLeft="30px" />
+
+                <ImageButton
+                    android:id="@+id/generateButton"
+                    android:layout_width="200dp"
+                    android:layout_height="104dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/genbtn" />
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

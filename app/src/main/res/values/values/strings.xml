@@ -1,0 +1,18 @@
+<resources>
+    <string-array name="style_array">
+        <item>Modern</item>
+        <item>Minimalist</item>
+        <item>Traditional</item>
+        <item>Industrial</item>
+    </string-array>
+
+    <string-array name="room_type_array">
+        <item>Living Room</item>
+        <item>Bedroom</item>
+        <item>Kitchen</item>
+        <item>Bathroom</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="see_all">See all...</string>
+</resources>
